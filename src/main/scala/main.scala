@@ -1,4 +1,6 @@
-import org.apache.spark.sql.{SparkSession, functions}
+import org.apache.spark.sql.functions.monotonically_increasing_id
+import org.apache.spark.sql.types.{DateType, DoubleType, IntegerType, StringType, StructField, StructType}
+import org.apache.spark.sql.{DataFrame, Row, SparkSession, functions}
 
 import scala.io.StdIn
 
@@ -14,6 +16,16 @@ def main(): Unit =
     .option("inferSchema", "true")
     .csv("transactions_massives_scala_spark.csv")
 
+  //MYSQL
+  val url = "jdbc:mysql://192.168.194.152:3306/scala"
+  val connectionProperties = new java.util.Properties()
+  connectionProperties.setProperty("user", "root")
+  connectionProperties.setProperty("password", "secret")
+  connectionProperties.setProperty("driver", "com.mysql.cj.jdbc.Driver")
+  //DataFrame MYSQL
+  val dataFrame = spark.read.jdbc(url, "users", connectionProperties)
+
+
 
   var choix = 1;
   while (choix != 0) {
@@ -25,6 +37,10 @@ def main(): Unit =
     println("5- Analyse temporelle des ventes : ")
     println("6- Calculer le chiffre d’affaires pour chaque mois")
     println("7- Afficher le top 6 des mois les plus rentables")
+    println("8- Afficher les users")
+    println("9- Créer un User")
+    println("10- Créer la tables transactions_massives")
+    println("11- Lecture du CSV et Imports dans la table transactions_massives")
     println("0- QUITTER")
     choix = StdIn.readLine().toInt
     choix match {
@@ -87,5 +103,55 @@ def main(): Unit =
           .orderBy(functions.desc("Chiffre d'Affaires"))
           .limit(6)
           .show()
+      case 8 =>
+        //dataFrame.select("email").show()
+        dataFrame.show()
+      case 9 =>
+
+        println("Entrez le nom")
+        val nomEntree = StdIn.readLine()
+        println("Entrez mail")
+        val mailEntree = StdIn.readLine()
+        println("Entrez mdp")
+        val mdpEntree = StdIn.readLine()
+
+        val userCreateData = Seq((nomEntree, mailEntree, mdpEntree))
+        val schemaUser = StructType(Array(
+          StructField("name", StringType, false),
+          StructField("email", StringType, false),
+          StructField("password", StringType, false)
+        ))
+        val rowRDD = spark.sparkContext.parallelize(userCreateData).map(x => Row(x._1, x._2, x._3))
+        val userCreateDF = spark.createDataFrame(rowRDD, schemaUser)
+
+        userCreateDF
+        .write
+        .mode("append")
+        .jdbc(url, "users", connectionProperties)
+      case 10 =>
+        val schemaTransactionsMassives = StructType(Array(
+          StructField("id", IntegerType, false),
+          StructField("id_commande", IntegerType, false),
+          StructField("produit", StringType, false),
+          StructField("categorie", StringType, false),
+          StructField("prix_unitaire", DoubleType, false),
+          StructField("quantite", IntegerType, false),
+          StructField("montant", DoubleType, false),
+          StructField("date_achat", DateType, false)
+        ))
+
+        val tmDF = spark
+          .createDataFrame(spark.sparkContext.emptyRDD[Row], schemaTransactionsMassives)
+
+        tmDF
+          .write
+          .mode("overwrite")
+          .jdbc(url, "transactions_massives", connectionProperties)
+
+      case 11 =>
+        stocksDF
+          .write
+          .mode("append")
+          .jdbc(url, "transactions_massives", connectionProperties)
     }
   }
