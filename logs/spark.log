@@ -6942,3 +6942,561 @@ Driver stacktrace:
 2025-02-24 15:59:24 INFO  SparkContext: Successfully stopped SparkContext
 2025-02-24 15:59:24 INFO  ShutdownHookManager: Shutdown hook called
 2025-02-24 15:59:24 INFO  ShutdownHookManager: Deleting directory /private/var/folders/zr/9zs30z0x7zqg2qtlblgpd45r0000gn/T/spark-ddd0acdb-cddc-4611-ade6-c4cecb10dd27
+2025-05-19 10:33:17 WARN  Utils: Your hostname, MacBook-Pro-2.local resolves to a loopback address: 127.0.0.1, but we couldn't find any external IP address!
+2025-05-19 10:33:17 WARN  Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+2025-05-19 10:33:17 INFO  SparkContext: Running Spark version 3.4.0
+2025-05-19 10:33:18 INFO  ResourceUtils: ==============================================================
+2025-05-19 10:33:18 INFO  ResourceUtils: No custom resources configured for spark.driver.
+2025-05-19 10:33:18 INFO  ResourceUtils: ==============================================================
+2025-05-19 10:33:18 INFO  SparkContext: Submitted application: Analyse de stock massive
+2025-05-19 10:33:18 INFO  ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2025-05-19 10:33:18 INFO  ResourceProfile: Limiting resource is cpu
+2025-05-19 10:33:18 INFO  ResourceProfileManager: Added ResourceProfile id: 0
+2025-05-19 10:33:18 INFO  SecurityManager: Changing view acls to: fabob
+2025-05-19 10:33:18 INFO  SecurityManager: Changing modify acls to: fabob
+2025-05-19 10:33:18 INFO  SecurityManager: Changing view acls groups to: 
+2025-05-19 10:33:18 INFO  SecurityManager: Changing modify acls groups to: 
+2025-05-19 10:33:18 INFO  SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: fabob; groups with view permissions: EMPTY; users with modify permissions: fabob; groups with modify permissions: EMPTY
+2025-05-19 10:33:18 INFO  Utils: Successfully started service 'sparkDriver' on port 50801.
+2025-05-19 10:33:18 INFO  SparkEnv: Registering MapOutputTracker
+2025-05-19 10:33:18 INFO  SparkEnv: Registering BlockManagerMaster
+2025-05-19 10:33:18 INFO  BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2025-05-19 10:33:18 INFO  BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+2025-05-19 10:33:18 INFO  SparkEnv: Registering BlockManagerMasterHeartbeat
+2025-05-19 10:33:18 INFO  DiskBlockManager: Created local directory at /private/var/folders/zr/9zs30z0x7zqg2qtlblgpd45r0000gn/T/blockmgr-c0834220-58d5-4c5c-bf61-29d3d3464aaf
+2025-05-19 10:33:18 INFO  MemoryStore: MemoryStore started with capacity 2.2 GiB
+2025-05-19 10:33:18 INFO  SparkEnv: Registering OutputCommitCoordinator
+2025-05-19 10:33:18 INFO  log: Logging initialized @1945ms to org.sparkproject.jetty.util.log.Slf4jLog
+2025-05-19 10:33:18 INFO  JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+2025-05-19 10:33:18 INFO  Server: jetty-9.4.50.v20221201; built: 2022-12-01T22:07:03.915Z; git: da9a0b30691a45daf90a9f17b5defa2f1434f882; jvm 17+35-LTS-2724
+2025-05-19 10:33:18 INFO  Server: Started @2162ms
+2025-05-19 10:33:18 INFO  AbstractConnector: Started ServerConnector@2a2ef072{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-05-19 10:33:18 INFO  Utils: Successfully started service 'SparkUI' on port 4040.
+2025-05-19 10:33:18 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@14823f76{/,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  Executor: Starting executor ID driver on host localhost
+2025-05-19 10:33:19 INFO  Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+2025-05-19 10:33:19 INFO  Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 50806.
+2025-05-19 10:33:19 INFO  NettyBlockTransferService: Server created on localhost:50806
+2025-05-19 10:33:19 INFO  BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2025-05-19 10:33:19 INFO  BlockManagerMaster: Registering BlockManager BlockManagerId(driver, localhost, 50806, None)
+2025-05-19 10:33:19 INFO  BlockManagerMasterEndpoint: Registering block manager localhost:50806 with 2.2 GiB RAM, BlockManagerId(driver, localhost, 50806, None)
+2025-05-19 10:33:19 INFO  BlockManagerMaster: Registered BlockManager BlockManagerId(driver, localhost, 50806, None)
+2025-05-19 10:33:19 INFO  BlockManager: Initialized BlockManager: BlockManagerId(driver, localhost, 50806, None)
+2025-05-19 10:33:19 INFO  ContextHandler: Stopped o.s.j.s.ServletContextHandler@14823f76{/,null,STOPPED,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@619f2afc{/jobs,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@4db60246{/jobs/json,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@eb6ec6{/jobs/job,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@18137eab{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@2935fd2c{/stages,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@3ce443f9{/stages/json,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@2806d6da{/stages/stage,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@1db7157f{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@6bccd036{/stages/pool,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@6a756082{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@1f3b992{/storage,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@6b63e6ad{/storage/json,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@6749fe50{/storage/rdd,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@261db982{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@22f4f8f2{/environment,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@40a72ecd{/environment/json,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@76a14c8d{/executors,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@6ee99964{/executors/json,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@59c70ceb{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@64f981e2{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@575b5f7d{/static,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@1d50a7ca{/,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@2e766822{/api,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@1db87583{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@1d6d1d42{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@7c51782d{/metrics/json,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+2025-05-19 10:33:19 INFO  SharedState: Warehouse path is 'file:/Users/fabob/IdeaProjects/transactions_massives_scala/spark-warehouse'.
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@6274670b{/SQL,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@32d5279{/SQL/json,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@3965bdf9{/SQL/execution,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@1860f3be{/SQL/execution/json,null,AVAILABLE,@Spark}
+2025-05-19 10:33:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@3b4825f0{/static/sql,null,AVAILABLE,@Spark}
+2025-05-19 10:33:20 INFO  InMemoryFileIndex: It took 68 ms to list leaf files for 1 paths.
+2025-05-19 10:33:20 INFO  InMemoryFileIndex: It took 3 ms to list leaf files for 1 paths.
+2025-05-19 10:33:22 INFO  FileSourceStrategy: Pushed Filters: 
+2025-05-19 10:33:22 INFO  FileSourceStrategy: Post-Scan Filters: (length(trim(value#0, None)) > 0)
+2025-05-19 10:33:23 INFO  CodeGenerator: Code generated in 305.609125 ms
+2025-05-19 10:33:23 INFO  MemoryStore: Block broadcast_0 stored as values in memory (estimated size 376.0 B, free 2.2 GiB)
+2025-05-19 10:33:23 INFO  MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 34.2 KiB, free 2.2 GiB)
+2025-05-19 10:33:23 INFO  BlockManagerInfo: Added broadcast_0_piece0 in memory on localhost:50806 (size: 34.2 KiB, free: 2.2 GiB)
+2025-05-19 10:33:23 INFO  SparkContext: Created broadcast 0 from csv at main.scala:17
+2025-05-19 10:33:23 INFO  FileSourceScanExec: Planning scan with bin packing, max size: 9849868 bytes, open cost is considered as scanning 4194304 bytes.
+2025-05-19 10:33:23 INFO  SparkContext: Starting job: csv at main.scala:17
+2025-05-19 10:33:23 INFO  DAGScheduler: Got job 0 (csv at main.scala:17) with 1 output partitions
+2025-05-19 10:33:23 INFO  DAGScheduler: Final stage: ResultStage 0 (csv at main.scala:17)
+2025-05-19 10:33:23 INFO  DAGScheduler: Parents of final stage: List()
+2025-05-19 10:33:23 INFO  DAGScheduler: Missing parents: List()
+2025-05-19 10:33:23 INFO  DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[3] at csv at main.scala:17), which has no missing parents
+2025-05-19 10:33:23 INFO  MemoryStore: Block broadcast_1 stored as values in memory (estimated size 12.3 KiB, free 2.2 GiB)
+2025-05-19 10:33:23 INFO  MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 6.1 KiB, free 2.2 GiB)
+2025-05-19 10:33:23 INFO  BlockManagerInfo: Added broadcast_1_piece0 in memory on localhost:50806 (size: 6.1 KiB, free: 2.2 GiB)
+2025-05-19 10:33:23 INFO  SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1535
+2025-05-19 10:33:23 INFO  DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at csv at main.scala:17) (first 15 tasks are for partitions Vector(0))
+2025-05-19 10:33:23 INFO  TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+2025-05-19 10:33:23 INFO  TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (localhost, executor driver, partition 0, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:33:23 INFO  Executor: Running task 0.0 in stage 0.0 (TID 0)
+2025-05-19 10:33:23 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 0-9849868, partition values: [empty row]
+2025-05-19 10:33:23 INFO  CodeGenerator: Code generated in 7.755125 ms
+2025-05-19 10:33:23 INFO  Executor: Finished task 0.0 in stage 0.0 (TID 0). 1773 bytes result sent to driver
+2025-05-19 10:33:23 INFO  TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 154 ms on localhost (executor driver) (1/1)
+2025-05-19 10:33:23 INFO  TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2025-05-19 10:33:23 INFO  DAGScheduler: ResultStage 0 (csv at main.scala:17) finished in 0,230 s
+2025-05-19 10:33:23 INFO  DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-05-19 10:33:23 INFO  TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+2025-05-19 10:33:23 INFO  DAGScheduler: Job 0 finished: csv at main.scala:17, took 0,264346 s
+2025-05-19 10:33:23 INFO  CodeGenerator: Code generated in 19.992208 ms
+2025-05-19 10:33:24 INFO  BlockManagerInfo: Removed broadcast_1_piece0 on localhost:50806 in memory (size: 6.1 KiB, free: 2.2 GiB)
+2025-05-19 10:33:24 INFO  FileSourceStrategy: Pushed Filters: 
+2025-05-19 10:33:24 INFO  FileSourceStrategy: Post-Scan Filters: 
+2025-05-19 10:33:24 INFO  MemoryStore: Block broadcast_2 stored as values in memory (estimated size 376.0 B, free 2.2 GiB)
+2025-05-19 10:33:24 INFO  MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 34.2 KiB, free 2.2 GiB)
+2025-05-19 10:33:24 INFO  BlockManagerInfo: Added broadcast_2_piece0 in memory on localhost:50806 (size: 34.2 KiB, free: 2.2 GiB)
+2025-05-19 10:33:24 INFO  SparkContext: Created broadcast 2 from csv at main.scala:17
+2025-05-19 10:33:24 INFO  FileSourceScanExec: Planning scan with bin packing, max size: 9849868 bytes, open cost is considered as scanning 4194304 bytes.
+2025-05-19 10:33:24 INFO  BlockManagerInfo: Removed broadcast_0_piece0 on localhost:50806 in memory (size: 34.2 KiB, free: 2.2 GiB)
+2025-05-19 10:33:24 INFO  SparkContext: Starting job: csv at main.scala:17
+2025-05-19 10:33:24 INFO  DAGScheduler: Got job 1 (csv at main.scala:17) with 8 output partitions
+2025-05-19 10:33:24 INFO  DAGScheduler: Final stage: ResultStage 1 (csv at main.scala:17)
+2025-05-19 10:33:24 INFO  DAGScheduler: Parents of final stage: List()
+2025-05-19 10:33:24 INFO  DAGScheduler: Missing parents: List()
+2025-05-19 10:33:24 INFO  DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[9] at csv at main.scala:17), which has no missing parents
+2025-05-19 10:33:24 INFO  MemoryStore: Block broadcast_3 stored as values in memory (estimated size 19.8 KiB, free 2.2 GiB)
+2025-05-19 10:33:24 INFO  MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 9.1 KiB, free 2.2 GiB)
+2025-05-19 10:33:24 INFO  BlockManagerInfo: Added broadcast_3_piece0 in memory on localhost:50806 (size: 9.1 KiB, free: 2.2 GiB)
+2025-05-19 10:33:24 INFO  SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1535
+2025-05-19 10:33:24 INFO  DAGScheduler: Submitting 8 missing tasks from ResultStage 1 (MapPartitionsRDD[9] at csv at main.scala:17) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7))
+2025-05-19 10:33:24 INFO  TaskSchedulerImpl: Adding task set 1.0 with 8 tasks resource profile 0
+2025-05-19 10:33:24 INFO  TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (localhost, executor driver, partition 0, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:33:24 INFO  TaskSetManager: Starting task 1.0 in stage 1.0 (TID 2) (localhost, executor driver, partition 1, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:33:24 INFO  TaskSetManager: Starting task 2.0 in stage 1.0 (TID 3) (localhost, executor driver, partition 2, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:33:24 INFO  TaskSetManager: Starting task 3.0 in stage 1.0 (TID 4) (localhost, executor driver, partition 3, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:33:24 INFO  TaskSetManager: Starting task 4.0 in stage 1.0 (TID 5) (localhost, executor driver, partition 4, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:33:24 INFO  TaskSetManager: Starting task 5.0 in stage 1.0 (TID 6) (localhost, executor driver, partition 5, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:33:24 INFO  TaskSetManager: Starting task 6.0 in stage 1.0 (TID 7) (localhost, executor driver, partition 6, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:33:24 INFO  TaskSetManager: Starting task 7.0 in stage 1.0 (TID 8) (localhost, executor driver, partition 7, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:33:24 INFO  Executor: Running task 0.0 in stage 1.0 (TID 1)
+2025-05-19 10:33:24 INFO  Executor: Running task 2.0 in stage 1.0 (TID 3)
+2025-05-19 10:33:24 INFO  Executor: Running task 1.0 in stage 1.0 (TID 2)
+2025-05-19 10:33:24 INFO  Executor: Running task 3.0 in stage 1.0 (TID 4)
+2025-05-19 10:33:24 INFO  Executor: Running task 4.0 in stage 1.0 (TID 5)
+2025-05-19 10:33:24 INFO  Executor: Running task 5.0 in stage 1.0 (TID 6)
+2025-05-19 10:33:24 INFO  Executor: Running task 6.0 in stage 1.0 (TID 7)
+2025-05-19 10:33:24 INFO  Executor: Running task 7.0 in stage 1.0 (TID 8)
+2025-05-19 10:33:24 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 19699736-29549604, partition values: [empty row]
+2025-05-19 10:33:24 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 29549604-39399472, partition values: [empty row]
+2025-05-19 10:33:24 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 9849868-19699736, partition values: [empty row]
+2025-05-19 10:33:24 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 49249340-59099208, partition values: [empty row]
+2025-05-19 10:33:24 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 59099208-68949076, partition values: [empty row]
+2025-05-19 10:33:24 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 39399472-49249340, partition values: [empty row]
+2025-05-19 10:33:24 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 0-9849868, partition values: [empty row]
+2025-05-19 10:33:24 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 68949076-74604645, partition values: [empty row]
+2025-05-19 10:33:25 INFO  Executor: Finished task 7.0 in stage 1.0 (TID 8). 1981 bytes result sent to driver
+2025-05-19 10:33:25 INFO  TaskSetManager: Finished task 7.0 in stage 1.0 (TID 8) in 1357 ms on localhost (executor driver) (1/8)
+2025-05-19 10:33:25 INFO  Executor: Finished task 1.0 in stage 1.0 (TID 2). 1938 bytes result sent to driver
+2025-05-19 10:33:25 INFO  TaskSetManager: Finished task 1.0 in stage 1.0 (TID 2) in 1496 ms on localhost (executor driver) (2/8)
+2025-05-19 10:33:25 INFO  Executor: Finished task 3.0 in stage 1.0 (TID 4). 1938 bytes result sent to driver
+2025-05-19 10:33:25 INFO  TaskSetManager: Finished task 3.0 in stage 1.0 (TID 4) in 1500 ms on localhost (executor driver) (3/8)
+2025-05-19 10:33:25 INFO  Executor: Finished task 2.0 in stage 1.0 (TID 3). 1938 bytes result sent to driver
+2025-05-19 10:33:25 INFO  TaskSetManager: Finished task 2.0 in stage 1.0 (TID 3) in 1501 ms on localhost (executor driver) (4/8)
+2025-05-19 10:33:25 INFO  Executor: Finished task 0.0 in stage 1.0 (TID 1). 1938 bytes result sent to driver
+2025-05-19 10:33:25 INFO  TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 1505 ms on localhost (executor driver) (5/8)
+2025-05-19 10:33:25 INFO  Executor: Finished task 6.0 in stage 1.0 (TID 7). 1938 bytes result sent to driver
+2025-05-19 10:33:25 INFO  TaskSetManager: Finished task 6.0 in stage 1.0 (TID 7) in 1509 ms on localhost (executor driver) (6/8)
+2025-05-19 10:33:25 INFO  Executor: Finished task 4.0 in stage 1.0 (TID 5). 1938 bytes result sent to driver
+2025-05-19 10:33:25 INFO  TaskSetManager: Finished task 4.0 in stage 1.0 (TID 5) in 1518 ms on localhost (executor driver) (7/8)
+2025-05-19 10:33:25 INFO  Executor: Finished task 5.0 in stage 1.0 (TID 6). 1938 bytes result sent to driver
+2025-05-19 10:33:25 INFO  TaskSetManager: Finished task 5.0 in stage 1.0 (TID 6) in 1519 ms on localhost (executor driver) (8/8)
+2025-05-19 10:33:25 INFO  TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2025-05-19 10:33:25 INFO  DAGScheduler: ResultStage 1 (csv at main.scala:17) finished in 1,535 s
+2025-05-19 10:33:25 INFO  DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-05-19 10:33:25 INFO  TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+2025-05-19 10:33:25 INFO  DAGScheduler: Job 1 finished: csv at main.scala:17, took 1,537733 s
+2025-05-19 10:33:25 INFO  SparkContext: Invoking stop() from shutdown hook
+2025-05-19 10:33:25 INFO  SparkContext: SparkContext is stopping with exitCode 0.
+2025-05-19 10:33:25 INFO  AbstractConnector: Stopped Spark@2a2ef072{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-05-19 10:33:25 INFO  SparkUI: Stopped Spark web UI at http://localhost:4040
+2025-05-19 10:33:25 INFO  MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+2025-05-19 10:33:25 INFO  MemoryStore: MemoryStore cleared
+2025-05-19 10:33:25 INFO  BlockManager: BlockManager stopped
+2025-05-19 10:33:25 INFO  BlockManagerMaster: BlockManagerMaster stopped
+2025-05-19 10:33:25 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+2025-05-19 10:33:25 INFO  SparkContext: Successfully stopped SparkContext
+2025-05-19 10:33:25 INFO  ShutdownHookManager: Shutdown hook called
+2025-05-19 10:33:25 INFO  ShutdownHookManager: Deleting directory /private/var/folders/zr/9zs30z0x7zqg2qtlblgpd45r0000gn/T/spark-f6900716-aba2-4375-9d6f-6c710feb04f2
+2025-05-19 10:34:18 WARN  Utils: Your hostname, MacBook-Pro-2.local resolves to a loopback address: 127.0.0.1; using 172.20.10.3 instead (on interface en0)
+2025-05-19 10:34:18 WARN  Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+2025-05-19 10:34:18 INFO  SparkContext: Running Spark version 3.4.0
+2025-05-19 10:34:18 INFO  ResourceUtils: ==============================================================
+2025-05-19 10:34:18 INFO  ResourceUtils: No custom resources configured for spark.driver.
+2025-05-19 10:34:18 INFO  ResourceUtils: ==============================================================
+2025-05-19 10:34:18 INFO  SparkContext: Submitted application: Analyse de stock massive
+2025-05-19 10:34:18 INFO  ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2025-05-19 10:34:18 INFO  ResourceProfile: Limiting resource is cpu
+2025-05-19 10:34:18 INFO  ResourceProfileManager: Added ResourceProfile id: 0
+2025-05-19 10:34:18 INFO  SecurityManager: Changing view acls to: fabob
+2025-05-19 10:34:18 INFO  SecurityManager: Changing modify acls to: fabob
+2025-05-19 10:34:18 INFO  SecurityManager: Changing view acls groups to: 
+2025-05-19 10:34:18 INFO  SecurityManager: Changing modify acls groups to: 
+2025-05-19 10:34:18 INFO  SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: fabob; groups with view permissions: EMPTY; users with modify permissions: fabob; groups with modify permissions: EMPTY
+2025-05-19 10:34:19 INFO  Utils: Successfully started service 'sparkDriver' on port 51168.
+2025-05-19 10:34:19 INFO  SparkEnv: Registering MapOutputTracker
+2025-05-19 10:34:19 INFO  SparkEnv: Registering BlockManagerMaster
+2025-05-19 10:34:19 INFO  BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2025-05-19 10:34:19 INFO  BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+2025-05-19 10:34:19 INFO  SparkEnv: Registering BlockManagerMasterHeartbeat
+2025-05-19 10:34:19 INFO  DiskBlockManager: Created local directory at /private/var/folders/zr/9zs30z0x7zqg2qtlblgpd45r0000gn/T/blockmgr-990a8327-5f59-4a6d-8eea-652eacb210ce
+2025-05-19 10:34:19 INFO  MemoryStore: MemoryStore started with capacity 2.2 GiB
+2025-05-19 10:34:19 INFO  SparkEnv: Registering OutputCommitCoordinator
+2025-05-19 10:34:19 INFO  log: Logging initialized @1127ms to org.sparkproject.jetty.util.log.Slf4jLog
+2025-05-19 10:34:19 INFO  JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+2025-05-19 10:34:19 INFO  Server: jetty-9.4.50.v20221201; built: 2022-12-01T22:07:03.915Z; git: da9a0b30691a45daf90a9f17b5defa2f1434f882; jvm 17+35-LTS-2724
+2025-05-19 10:34:19 INFO  Server: Started @1198ms
+2025-05-19 10:34:19 INFO  AbstractConnector: Started ServerConnector@2f00f851{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-05-19 10:34:19 INFO  Utils: Successfully started service 'SparkUI' on port 4040.
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@6ed16657{/,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  Executor: Starting executor ID driver on host 172.20.10.3
+2025-05-19 10:34:19 INFO  Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+2025-05-19 10:34:19 INFO  Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 51173.
+2025-05-19 10:34:19 INFO  NettyBlockTransferService: Server created on 172.20.10.3:51173
+2025-05-19 10:34:19 INFO  BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2025-05-19 10:34:19 INFO  BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 172.20.10.3, 51173, None)
+2025-05-19 10:34:19 INFO  BlockManagerMasterEndpoint: Registering block manager 172.20.10.3:51173 with 2.2 GiB RAM, BlockManagerId(driver, 172.20.10.3, 51173, None)
+2025-05-19 10:34:19 INFO  BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 172.20.10.3, 51173, None)
+2025-05-19 10:34:19 INFO  BlockManager: Initialized BlockManager: BlockManagerId(driver, 172.20.10.3, 51173, None)
+2025-05-19 10:34:19 INFO  ContextHandler: Stopped o.s.j.s.ServletContextHandler@6ed16657{/,null,STOPPED,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@4db60246{/jobs,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@3902bd2c{/jobs/json,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@18137eab{/jobs/job,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@2935fd2c{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@3ce443f9{/stages,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@51a18b21{/stages/json,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@1db7157f{/stages/stage,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@6bccd036{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@6a756082{/stages/pool,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@1f3b992{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@6b63e6ad{/storage,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@6749fe50{/storage/json,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@261db982{/storage/rdd,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@22f4f8f2{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@40a72ecd{/environment,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@76a14c8d{/environment/json,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@6ee99964{/executors,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@59c70ceb{/executors/json,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@64f981e2{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@575b5f7d{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@7165d530{/static,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@2e766822{/,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@28757abd{/api,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@1d6d1d42{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@7978e022{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@48e8c32a{/metrics/json,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+2025-05-19 10:34:19 INFO  SharedState: Warehouse path is 'file:/Users/fabob/IdeaProjects/transactions_massives_scala/spark-warehouse'.
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@32d5279{/SQL,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@5d0b0cb9{/SQL/json,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@1860f3be{/SQL/execution,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@78cfa264{/SQL/execution/json,null,AVAILABLE,@Spark}
+2025-05-19 10:34:19 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@7980cf2c{/static/sql,null,AVAILABLE,@Spark}
+2025-05-19 10:34:20 INFO  InMemoryFileIndex: It took 18 ms to list leaf files for 1 paths.
+2025-05-19 10:34:20 INFO  InMemoryFileIndex: It took 1 ms to list leaf files for 1 paths.
+2025-05-19 10:34:21 INFO  FileSourceStrategy: Pushed Filters: 
+2025-05-19 10:34:21 INFO  FileSourceStrategy: Post-Scan Filters: (length(trim(value#0, None)) > 0)
+2025-05-19 10:34:21 INFO  CodeGenerator: Code generated in 127.206334 ms
+2025-05-19 10:34:21 INFO  MemoryStore: Block broadcast_0 stored as values in memory (estimated size 376.0 B, free 2.2 GiB)
+2025-05-19 10:34:22 INFO  MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 34.2 KiB, free 2.2 GiB)
+2025-05-19 10:34:22 INFO  BlockManagerInfo: Added broadcast_0_piece0 in memory on 172.20.10.3:51173 (size: 34.2 KiB, free: 2.2 GiB)
+2025-05-19 10:34:22 INFO  SparkContext: Created broadcast 0 from csv at main.scala:17
+2025-05-19 10:34:22 INFO  FileSourceScanExec: Planning scan with bin packing, max size: 9849868 bytes, open cost is considered as scanning 4194304 bytes.
+2025-05-19 10:34:22 INFO  SparkContext: Starting job: csv at main.scala:17
+2025-05-19 10:34:22 INFO  DAGScheduler: Got job 0 (csv at main.scala:17) with 1 output partitions
+2025-05-19 10:34:22 INFO  DAGScheduler: Final stage: ResultStage 0 (csv at main.scala:17)
+2025-05-19 10:34:22 INFO  DAGScheduler: Parents of final stage: List()
+2025-05-19 10:34:22 INFO  DAGScheduler: Missing parents: List()
+2025-05-19 10:34:22 INFO  DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[3] at csv at main.scala:17), which has no missing parents
+2025-05-19 10:34:22 INFO  MemoryStore: Block broadcast_1 stored as values in memory (estimated size 12.3 KiB, free 2.2 GiB)
+2025-05-19 10:34:22 INFO  MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 6.1 KiB, free 2.2 GiB)
+2025-05-19 10:34:22 INFO  BlockManagerInfo: Added broadcast_1_piece0 in memory on 172.20.10.3:51173 (size: 6.1 KiB, free: 2.2 GiB)
+2025-05-19 10:34:22 INFO  SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1535
+2025-05-19 10:34:22 INFO  DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at csv at main.scala:17) (first 15 tasks are for partitions Vector(0))
+2025-05-19 10:34:22 INFO  TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+2025-05-19 10:34:22 INFO  TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (172.20.10.3, executor driver, partition 0, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:34:22 INFO  Executor: Running task 0.0 in stage 0.0 (TID 0)
+2025-05-19 10:34:22 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 0-9849868, partition values: [empty row]
+2025-05-19 10:34:22 INFO  CodeGenerator: Code generated in 11.674375 ms
+2025-05-19 10:34:22 INFO  Executor: Finished task 0.0 in stage 0.0 (TID 0). 1773 bytes result sent to driver
+2025-05-19 10:34:22 INFO  TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 125 ms on 172.20.10.3 (executor driver) (1/1)
+2025-05-19 10:34:22 INFO  TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2025-05-19 10:34:22 INFO  DAGScheduler: ResultStage 0 (csv at main.scala:17) finished in 0,208 s
+2025-05-19 10:34:22 INFO  DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-05-19 10:34:22 INFO  TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+2025-05-19 10:34:22 INFO  DAGScheduler: Job 0 finished: csv at main.scala:17, took 0,231272 s
+2025-05-19 10:34:22 INFO  CodeGenerator: Code generated in 4.803792 ms
+2025-05-19 10:34:22 INFO  BlockManagerInfo: Removed broadcast_1_piece0 on 172.20.10.3:51173 in memory (size: 6.1 KiB, free: 2.2 GiB)
+2025-05-19 10:34:22 INFO  FileSourceStrategy: Pushed Filters: 
+2025-05-19 10:34:22 INFO  FileSourceStrategy: Post-Scan Filters: 
+2025-05-19 10:34:22 INFO  MemoryStore: Block broadcast_2 stored as values in memory (estimated size 376.0 B, free 2.2 GiB)
+2025-05-19 10:34:22 INFO  MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 34.2 KiB, free 2.2 GiB)
+2025-05-19 10:34:22 INFO  BlockManagerInfo: Added broadcast_2_piece0 in memory on 172.20.10.3:51173 (size: 34.2 KiB, free: 2.2 GiB)
+2025-05-19 10:34:22 INFO  SparkContext: Created broadcast 2 from csv at main.scala:17
+2025-05-19 10:34:22 INFO  FileSourceScanExec: Planning scan with bin packing, max size: 9849868 bytes, open cost is considered as scanning 4194304 bytes.
+2025-05-19 10:34:22 INFO  SparkContext: Starting job: csv at main.scala:17
+2025-05-19 10:34:22 INFO  DAGScheduler: Got job 1 (csv at main.scala:17) with 8 output partitions
+2025-05-19 10:34:22 INFO  DAGScheduler: Final stage: ResultStage 1 (csv at main.scala:17)
+2025-05-19 10:34:22 INFO  DAGScheduler: Parents of final stage: List()
+2025-05-19 10:34:22 INFO  DAGScheduler: Missing parents: List()
+2025-05-19 10:34:22 INFO  DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[9] at csv at main.scala:17), which has no missing parents
+2025-05-19 10:34:22 INFO  MemoryStore: Block broadcast_3 stored as values in memory (estimated size 19.8 KiB, free 2.2 GiB)
+2025-05-19 10:34:22 INFO  MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 9.1 KiB, free 2.2 GiB)
+2025-05-19 10:34:22 INFO  BlockManagerInfo: Added broadcast_3_piece0 in memory on 172.20.10.3:51173 (size: 9.1 KiB, free: 2.2 GiB)
+2025-05-19 10:34:22 INFO  SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1535
+2025-05-19 10:34:22 INFO  DAGScheduler: Submitting 8 missing tasks from ResultStage 1 (MapPartitionsRDD[9] at csv at main.scala:17) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7))
+2025-05-19 10:34:22 INFO  TaskSchedulerImpl: Adding task set 1.0 with 8 tasks resource profile 0
+2025-05-19 10:34:22 INFO  TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (172.20.10.3, executor driver, partition 0, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:34:22 INFO  TaskSetManager: Starting task 1.0 in stage 1.0 (TID 2) (172.20.10.3, executor driver, partition 1, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:34:22 INFO  TaskSetManager: Starting task 2.0 in stage 1.0 (TID 3) (172.20.10.3, executor driver, partition 2, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:34:22 INFO  TaskSetManager: Starting task 3.0 in stage 1.0 (TID 4) (172.20.10.3, executor driver, partition 3, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:34:22 INFO  TaskSetManager: Starting task 4.0 in stage 1.0 (TID 5) (172.20.10.3, executor driver, partition 4, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:34:22 INFO  TaskSetManager: Starting task 5.0 in stage 1.0 (TID 6) (172.20.10.3, executor driver, partition 5, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:34:22 INFO  TaskSetManager: Starting task 6.0 in stage 1.0 (TID 7) (172.20.10.3, executor driver, partition 6, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:34:22 INFO  TaskSetManager: Starting task 7.0 in stage 1.0 (TID 8) (172.20.10.3, executor driver, partition 7, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:34:22 INFO  Executor: Running task 1.0 in stage 1.0 (TID 2)
+2025-05-19 10:34:22 INFO  Executor: Running task 2.0 in stage 1.0 (TID 3)
+2025-05-19 10:34:22 INFO  Executor: Running task 3.0 in stage 1.0 (TID 4)
+2025-05-19 10:34:22 INFO  Executor: Running task 0.0 in stage 1.0 (TID 1)
+2025-05-19 10:34:22 INFO  Executor: Running task 4.0 in stage 1.0 (TID 5)
+2025-05-19 10:34:22 INFO  Executor: Running task 5.0 in stage 1.0 (TID 6)
+2025-05-19 10:34:22 INFO  Executor: Running task 6.0 in stage 1.0 (TID 7)
+2025-05-19 10:34:22 INFO  Executor: Running task 7.0 in stage 1.0 (TID 8)
+2025-05-19 10:34:22 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 68949076-74604645, partition values: [empty row]
+2025-05-19 10:34:22 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 0-9849868, partition values: [empty row]
+2025-05-19 10:34:22 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 39399472-49249340, partition values: [empty row]
+2025-05-19 10:34:22 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 29549604-39399472, partition values: [empty row]
+2025-05-19 10:34:22 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 19699736-29549604, partition values: [empty row]
+2025-05-19 10:34:22 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 59099208-68949076, partition values: [empty row]
+2025-05-19 10:34:22 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 9849868-19699736, partition values: [empty row]
+2025-05-19 10:34:22 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 49249340-59099208, partition values: [empty row]
+2025-05-19 10:34:23 INFO  BlockManagerInfo: Removed broadcast_0_piece0 on 172.20.10.3:51173 in memory (size: 34.2 KiB, free: 2.2 GiB)
+2025-05-19 10:34:23 INFO  Executor: Finished task 7.0 in stage 1.0 (TID 8). 1981 bytes result sent to driver
+2025-05-19 10:34:23 INFO  TaskSetManager: Finished task 7.0 in stage 1.0 (TID 8) in 836 ms on 172.20.10.3 (executor driver) (1/8)
+2025-05-19 10:34:23 INFO  Executor: Finished task 5.0 in stage 1.0 (TID 6). 1938 bytes result sent to driver
+2025-05-19 10:34:23 INFO  Executor: Finished task 3.0 in stage 1.0 (TID 4). 1938 bytes result sent to driver
+2025-05-19 10:34:23 INFO  TaskSetManager: Finished task 5.0 in stage 1.0 (TID 6) in 973 ms on 172.20.10.3 (executor driver) (2/8)
+2025-05-19 10:34:23 INFO  TaskSetManager: Finished task 3.0 in stage 1.0 (TID 4) in 976 ms on 172.20.10.3 (executor driver) (3/8)
+2025-05-19 10:34:23 INFO  Executor: Finished task 1.0 in stage 1.0 (TID 2). 1938 bytes result sent to driver
+2025-05-19 10:34:23 INFO  Executor: Finished task 2.0 in stage 1.0 (TID 3). 1938 bytes result sent to driver
+2025-05-19 10:34:23 INFO  Executor: Finished task 4.0 in stage 1.0 (TID 5). 1938 bytes result sent to driver
+2025-05-19 10:34:23 INFO  TaskSetManager: Finished task 2.0 in stage 1.0 (TID 3) in 979 ms on 172.20.10.3 (executor driver) (4/8)
+2025-05-19 10:34:23 INFO  TaskSetManager: Finished task 1.0 in stage 1.0 (TID 2) in 980 ms on 172.20.10.3 (executor driver) (5/8)
+2025-05-19 10:34:23 INFO  TaskSetManager: Finished task 4.0 in stage 1.0 (TID 5) in 980 ms on 172.20.10.3 (executor driver) (6/8)
+2025-05-19 10:34:23 INFO  Executor: Finished task 0.0 in stage 1.0 (TID 1). 1938 bytes result sent to driver
+2025-05-19 10:34:23 INFO  TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 982 ms on 172.20.10.3 (executor driver) (7/8)
+2025-05-19 10:34:23 INFO  Executor: Finished task 6.0 in stage 1.0 (TID 7). 1938 bytes result sent to driver
+2025-05-19 10:34:23 INFO  TaskSetManager: Finished task 6.0 in stage 1.0 (TID 7) in 984 ms on 172.20.10.3 (executor driver) (8/8)
+2025-05-19 10:34:23 INFO  TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2025-05-19 10:34:23 INFO  DAGScheduler: ResultStage 1 (csv at main.scala:17) finished in 0,999 s
+2025-05-19 10:34:23 INFO  DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-05-19 10:34:23 INFO  TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+2025-05-19 10:34:23 INFO  DAGScheduler: Job 1 finished: csv at main.scala:17, took 1,001902 s
+2025-05-19 10:35:08 INFO  SparkContext: Invoking stop() from shutdown hook
+2025-05-19 10:35:08 INFO  SparkContext: SparkContext is stopping with exitCode 0.
+2025-05-19 10:35:08 INFO  AbstractConnector: Stopped Spark@2f00f851{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-05-19 10:35:08 INFO  SparkUI: Stopped Spark web UI at http://172.20.10.3:4040
+2025-05-19 10:35:08 INFO  MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+2025-05-19 10:35:08 INFO  MemoryStore: MemoryStore cleared
+2025-05-19 10:35:08 INFO  BlockManager: BlockManager stopped
+2025-05-19 10:35:08 INFO  BlockManagerMaster: BlockManagerMaster stopped
+2025-05-19 10:35:08 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+2025-05-19 10:35:08 INFO  SparkContext: Successfully stopped SparkContext
+2025-05-19 10:35:08 INFO  ShutdownHookManager: Shutdown hook called
+2025-05-19 10:35:08 INFO  ShutdownHookManager: Deleting directory /private/var/folders/zr/9zs30z0x7zqg2qtlblgpd45r0000gn/T/spark-0b35b9ba-22b4-4b43-92dc-a9dd79d5748c
+2025-05-19 10:35:12 WARN  Utils: Your hostname, MacBook-Pro-2.local resolves to a loopback address: 127.0.0.1; using 172.20.10.3 instead (on interface en0)
+2025-05-19 10:35:12 WARN  Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+2025-05-19 10:35:12 INFO  SparkContext: Running Spark version 3.4.0
+2025-05-19 10:35:12 INFO  ResourceUtils: ==============================================================
+2025-05-19 10:35:12 INFO  ResourceUtils: No custom resources configured for spark.driver.
+2025-05-19 10:35:12 INFO  ResourceUtils: ==============================================================
+2025-05-19 10:35:12 INFO  SparkContext: Submitted application: Analyse de stock massive
+2025-05-19 10:35:12 INFO  ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2025-05-19 10:35:12 INFO  ResourceProfile: Limiting resource is cpu
+2025-05-19 10:35:12 INFO  ResourceProfileManager: Added ResourceProfile id: 0
+2025-05-19 10:35:12 INFO  SecurityManager: Changing view acls to: fabob
+2025-05-19 10:35:12 INFO  SecurityManager: Changing modify acls to: fabob
+2025-05-19 10:35:12 INFO  SecurityManager: Changing view acls groups to: 
+2025-05-19 10:35:12 INFO  SecurityManager: Changing modify acls groups to: 
+2025-05-19 10:35:12 INFO  SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: fabob; groups with view permissions: EMPTY; users with modify permissions: fabob; groups with modify permissions: EMPTY
+2025-05-19 10:35:12 INFO  Utils: Successfully started service 'sparkDriver' on port 51473.
+2025-05-19 10:35:12 INFO  SparkEnv: Registering MapOutputTracker
+2025-05-19 10:35:12 INFO  SparkEnv: Registering BlockManagerMaster
+2025-05-19 10:35:12 INFO  BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2025-05-19 10:35:12 INFO  BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+2025-05-19 10:35:12 INFO  SparkEnv: Registering BlockManagerMasterHeartbeat
+2025-05-19 10:35:12 INFO  DiskBlockManager: Created local directory at /private/var/folders/zr/9zs30z0x7zqg2qtlblgpd45r0000gn/T/blockmgr-dfbaed4c-f320-4ca4-8650-76a351d260b8
+2025-05-19 10:35:12 INFO  MemoryStore: MemoryStore started with capacity 2.2 GiB
+2025-05-19 10:35:12 INFO  SparkEnv: Registering OutputCommitCoordinator
+2025-05-19 10:35:12 INFO  log: Logging initialized @971ms to org.sparkproject.jetty.util.log.Slf4jLog
+2025-05-19 10:35:12 INFO  JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+2025-05-19 10:35:12 INFO  Server: jetty-9.4.50.v20221201; built: 2022-12-01T22:07:03.915Z; git: da9a0b30691a45daf90a9f17b5defa2f1434f882; jvm 17+35-LTS-2724
+2025-05-19 10:35:12 INFO  Server: Started @1024ms
+2025-05-19 10:35:12 INFO  AbstractConnector: Started ServerConnector@1fb48736{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-05-19 10:35:12 INFO  Utils: Successfully started service 'SparkUI' on port 4040.
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@6ed16657{/,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  Executor: Starting executor ID driver on host 172.20.10.3
+2025-05-19 10:35:12 INFO  Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+2025-05-19 10:35:12 INFO  Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 51474.
+2025-05-19 10:35:12 INFO  NettyBlockTransferService: Server created on 172.20.10.3:51474
+2025-05-19 10:35:12 INFO  BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2025-05-19 10:35:12 INFO  BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 172.20.10.3, 51474, None)
+2025-05-19 10:35:12 INFO  BlockManagerMasterEndpoint: Registering block manager 172.20.10.3:51474 with 2.2 GiB RAM, BlockManagerId(driver, 172.20.10.3, 51474, None)
+2025-05-19 10:35:12 INFO  BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 172.20.10.3, 51474, None)
+2025-05-19 10:35:12 INFO  BlockManager: Initialized BlockManager: BlockManagerId(driver, 172.20.10.3, 51474, None)
+2025-05-19 10:35:12 INFO  ContextHandler: Stopped o.s.j.s.ServletContextHandler@6ed16657{/,null,STOPPED,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@4db60246{/jobs,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@3902bd2c{/jobs/json,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@18137eab{/jobs/job,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@2935fd2c{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@3ce443f9{/stages,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@51a18b21{/stages/json,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@1db7157f{/stages/stage,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@6bccd036{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@6a756082{/stages/pool,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@1f3b992{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@6b63e6ad{/storage,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@6749fe50{/storage/json,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@261db982{/storage/rdd,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@22f4f8f2{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@40a72ecd{/environment,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@76a14c8d{/environment/json,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@6ee99964{/executors,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@59c70ceb{/executors/json,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@64f981e2{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@575b5f7d{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@7165d530{/static,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@2e766822{/,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@28757abd{/api,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@1d6d1d42{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@7978e022{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@48e8c32a{/metrics/json,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+2025-05-19 10:35:12 INFO  SharedState: Warehouse path is 'file:/Users/fabob/IdeaProjects/transactions_massives_scala/spark-warehouse'.
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@32d5279{/SQL,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@5d0b0cb9{/SQL/json,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@1860f3be{/SQL/execution,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@78cfa264{/SQL/execution/json,null,AVAILABLE,@Spark}
+2025-05-19 10:35:12 INFO  ContextHandler: Started o.s.j.s.ServletContextHandler@7980cf2c{/static/sql,null,AVAILABLE,@Spark}
+2025-05-19 10:35:13 INFO  InMemoryFileIndex: It took 17 ms to list leaf files for 1 paths.
+2025-05-19 10:35:13 INFO  InMemoryFileIndex: It took 1 ms to list leaf files for 1 paths.
+2025-05-19 10:35:13 INFO  FileSourceStrategy: Pushed Filters: 
+2025-05-19 10:35:13 INFO  FileSourceStrategy: Post-Scan Filters: (length(trim(value#0, None)) > 0)
+2025-05-19 10:35:14 INFO  CodeGenerator: Code generated in 79.391625 ms
+2025-05-19 10:35:14 INFO  MemoryStore: Block broadcast_0 stored as values in memory (estimated size 376.0 B, free 2.2 GiB)
+2025-05-19 10:35:14 INFO  MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 34.2 KiB, free 2.2 GiB)
+2025-05-19 10:35:14 INFO  BlockManagerInfo: Added broadcast_0_piece0 in memory on 172.20.10.3:51474 (size: 34.2 KiB, free: 2.2 GiB)
+2025-05-19 10:35:14 INFO  SparkContext: Created broadcast 0 from csv at main.scala:17
+2025-05-19 10:35:14 INFO  FileSourceScanExec: Planning scan with bin packing, max size: 9849868 bytes, open cost is considered as scanning 4194304 bytes.
+2025-05-19 10:35:14 INFO  SparkContext: Starting job: csv at main.scala:17
+2025-05-19 10:35:14 INFO  DAGScheduler: Got job 0 (csv at main.scala:17) with 1 output partitions
+2025-05-19 10:35:14 INFO  DAGScheduler: Final stage: ResultStage 0 (csv at main.scala:17)
+2025-05-19 10:35:14 INFO  DAGScheduler: Parents of final stage: List()
+2025-05-19 10:35:14 INFO  DAGScheduler: Missing parents: List()
+2025-05-19 10:35:14 INFO  DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[3] at csv at main.scala:17), which has no missing parents
+2025-05-19 10:35:14 INFO  MemoryStore: Block broadcast_1 stored as values in memory (estimated size 12.3 KiB, free 2.2 GiB)
+2025-05-19 10:35:14 INFO  MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 6.1 KiB, free 2.2 GiB)
+2025-05-19 10:35:14 INFO  BlockManagerInfo: Added broadcast_1_piece0 in memory on 172.20.10.3:51474 (size: 6.1 KiB, free: 2.2 GiB)
+2025-05-19 10:35:14 INFO  SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1535
+2025-05-19 10:35:14 INFO  DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at csv at main.scala:17) (first 15 tasks are for partitions Vector(0))
+2025-05-19 10:35:14 INFO  TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+2025-05-19 10:35:14 INFO  TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (172.20.10.3, executor driver, partition 0, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:35:14 INFO  Executor: Running task 0.0 in stage 0.0 (TID 0)
+2025-05-19 10:35:14 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 0-9849868, partition values: [empty row]
+2025-05-19 10:35:14 INFO  CodeGenerator: Code generated in 6.880125 ms
+2025-05-19 10:35:14 INFO  Executor: Finished task 0.0 in stage 0.0 (TID 0). 1816 bytes result sent to driver
+2025-05-19 10:35:14 INFO  TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 104 ms on 172.20.10.3 (executor driver) (1/1)
+2025-05-19 10:35:14 INFO  TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2025-05-19 10:35:14 INFO  DAGScheduler: ResultStage 0 (csv at main.scala:17) finished in 0,162 s
+2025-05-19 10:35:14 INFO  DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-05-19 10:35:14 INFO  TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+2025-05-19 10:35:14 INFO  DAGScheduler: Job 0 finished: csv at main.scala:17, took 0,179346 s
+2025-05-19 10:35:14 INFO  CodeGenerator: Code generated in 3.745916 ms
+2025-05-19 10:35:14 INFO  BlockManagerInfo: Removed broadcast_1_piece0 on 172.20.10.3:51474 in memory (size: 6.1 KiB, free: 2.2 GiB)
+2025-05-19 10:35:14 INFO  FileSourceStrategy: Pushed Filters: 
+2025-05-19 10:35:14 INFO  FileSourceStrategy: Post-Scan Filters: 
+2025-05-19 10:35:14 INFO  MemoryStore: Block broadcast_2 stored as values in memory (estimated size 376.0 B, free 2.2 GiB)
+2025-05-19 10:35:14 INFO  MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 34.2 KiB, free 2.2 GiB)
+2025-05-19 10:35:14 INFO  BlockManagerInfo: Added broadcast_2_piece0 in memory on 172.20.10.3:51474 (size: 34.2 KiB, free: 2.2 GiB)
+2025-05-19 10:35:14 INFO  SparkContext: Created broadcast 2 from csv at main.scala:17
+2025-05-19 10:35:14 INFO  FileSourceScanExec: Planning scan with bin packing, max size: 9849868 bytes, open cost is considered as scanning 4194304 bytes.
+2025-05-19 10:35:14 INFO  SparkContext: Starting job: csv at main.scala:17
+2025-05-19 10:35:14 INFO  DAGScheduler: Got job 1 (csv at main.scala:17) with 8 output partitions
+2025-05-19 10:35:14 INFO  DAGScheduler: Final stage: ResultStage 1 (csv at main.scala:17)
+2025-05-19 10:35:14 INFO  DAGScheduler: Parents of final stage: List()
+2025-05-19 10:35:14 INFO  DAGScheduler: Missing parents: List()
+2025-05-19 10:35:14 INFO  DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[9] at csv at main.scala:17), which has no missing parents
+2025-05-19 10:35:14 INFO  MemoryStore: Block broadcast_3 stored as values in memory (estimated size 19.8 KiB, free 2.2 GiB)
+2025-05-19 10:35:14 INFO  MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 9.1 KiB, free 2.2 GiB)
+2025-05-19 10:35:14 INFO  BlockManagerInfo: Added broadcast_3_piece0 in memory on 172.20.10.3:51474 (size: 9.1 KiB, free: 2.2 GiB)
+2025-05-19 10:35:14 INFO  SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1535
+2025-05-19 10:35:14 INFO  DAGScheduler: Submitting 8 missing tasks from ResultStage 1 (MapPartitionsRDD[9] at csv at main.scala:17) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7))
+2025-05-19 10:35:14 INFO  TaskSchedulerImpl: Adding task set 1.0 with 8 tasks resource profile 0
+2025-05-19 10:35:14 INFO  BlockManagerInfo: Removed broadcast_0_piece0 on 172.20.10.3:51474 in memory (size: 34.2 KiB, free: 2.2 GiB)
+2025-05-19 10:35:14 INFO  TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (172.20.10.3, executor driver, partition 0, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:35:14 INFO  TaskSetManager: Starting task 1.0 in stage 1.0 (TID 2) (172.20.10.3, executor driver, partition 1, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:35:14 INFO  TaskSetManager: Starting task 2.0 in stage 1.0 (TID 3) (172.20.10.3, executor driver, partition 2, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:35:14 INFO  TaskSetManager: Starting task 3.0 in stage 1.0 (TID 4) (172.20.10.3, executor driver, partition 3, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:35:14 INFO  TaskSetManager: Starting task 4.0 in stage 1.0 (TID 5) (172.20.10.3, executor driver, partition 4, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:35:14 INFO  TaskSetManager: Starting task 5.0 in stage 1.0 (TID 6) (172.20.10.3, executor driver, partition 5, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:35:14 INFO  TaskSetManager: Starting task 6.0 in stage 1.0 (TID 7) (172.20.10.3, executor driver, partition 6, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:35:14 INFO  TaskSetManager: Starting task 7.0 in stage 1.0 (TID 8) (172.20.10.3, executor driver, partition 7, PROCESS_LOCAL, 8052 bytes) 
+2025-05-19 10:35:14 INFO  Executor: Running task 0.0 in stage 1.0 (TID 1)
+2025-05-19 10:35:14 INFO  Executor: Running task 1.0 in stage 1.0 (TID 2)
+2025-05-19 10:35:14 INFO  Executor: Running task 3.0 in stage 1.0 (TID 4)
+2025-05-19 10:35:14 INFO  Executor: Running task 2.0 in stage 1.0 (TID 3)
+2025-05-19 10:35:14 INFO  Executor: Running task 4.0 in stage 1.0 (TID 5)
+2025-05-19 10:35:14 INFO  Executor: Running task 5.0 in stage 1.0 (TID 6)
+2025-05-19 10:35:14 INFO  Executor: Running task 6.0 in stage 1.0 (TID 7)
+2025-05-19 10:35:14 INFO  Executor: Running task 7.0 in stage 1.0 (TID 8)
+2025-05-19 10:35:14 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 59099208-68949076, partition values: [empty row]
+2025-05-19 10:35:14 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 19699736-29549604, partition values: [empty row]
+2025-05-19 10:35:14 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 49249340-59099208, partition values: [empty row]
+2025-05-19 10:35:14 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 0-9849868, partition values: [empty row]
+2025-05-19 10:35:14 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 68949076-74604645, partition values: [empty row]
+2025-05-19 10:35:14 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 39399472-49249340, partition values: [empty row]
+2025-05-19 10:35:14 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 9849868-19699736, partition values: [empty row]
+2025-05-19 10:35:14 INFO  FileScanRDD: Reading File path: file:///Users/fabob/IdeaProjects/transactions_massives_scala/transactions_massives_scala_spark.csv, range: 29549604-39399472, partition values: [empty row]
+2025-05-19 10:35:15 INFO  Executor: Finished task 7.0 in stage 1.0 (TID 8). 1981 bytes result sent to driver
+2025-05-19 10:35:15 INFO  TaskSetManager: Finished task 7.0 in stage 1.0 (TID 8) in 734 ms on 172.20.10.3 (executor driver) (1/8)
+2025-05-19 10:35:15 INFO  Executor: Finished task 6.0 in stage 1.0 (TID 7). 1938 bytes result sent to driver
+2025-05-19 10:35:15 INFO  TaskSetManager: Finished task 6.0 in stage 1.0 (TID 7) in 817 ms on 172.20.10.3 (executor driver) (2/8)
+2025-05-19 10:35:15 INFO  Executor: Finished task 5.0 in stage 1.0 (TID 6). 1938 bytes result sent to driver
+2025-05-19 10:35:15 INFO  TaskSetManager: Finished task 5.0 in stage 1.0 (TID 6) in 829 ms on 172.20.10.3 (executor driver) (3/8)
+2025-05-19 10:35:15 INFO  Executor: Finished task 0.0 in stage 1.0 (TID 1). 1938 bytes result sent to driver
+2025-05-19 10:35:15 INFO  TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 832 ms on 172.20.10.3 (executor driver) (4/8)
+2025-05-19 10:35:15 INFO  Executor: Finished task 2.0 in stage 1.0 (TID 3). 1938 bytes result sent to driver
+2025-05-19 10:35:15 INFO  TaskSetManager: Finished task 2.0 in stage 1.0 (TID 3) in 835 ms on 172.20.10.3 (executor driver) (5/8)
+2025-05-19 10:35:15 INFO  Executor: Finished task 4.0 in stage 1.0 (TID 5). 1938 bytes result sent to driver
+2025-05-19 10:35:15 INFO  TaskSetManager: Finished task 4.0 in stage 1.0 (TID 5) in 836 ms on 172.20.10.3 (executor driver) (6/8)
+2025-05-19 10:35:15 INFO  Executor: Finished task 3.0 in stage 1.0 (TID 4). 1938 bytes result sent to driver
+2025-05-19 10:35:15 INFO  TaskSetManager: Finished task 3.0 in stage 1.0 (TID 4) in 845 ms on 172.20.10.3 (executor driver) (7/8)
+2025-05-19 10:35:15 INFO  Executor: Finished task 1.0 in stage 1.0 (TID 2). 1938 bytes result sent to driver
+2025-05-19 10:35:15 INFO  TaskSetManager: Finished task 1.0 in stage 1.0 (TID 2) in 847 ms on 172.20.10.3 (executor driver) (8/8)
+2025-05-19 10:35:15 INFO  TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2025-05-19 10:35:15 INFO  DAGScheduler: ResultStage 1 (csv at main.scala:17) finished in 0,866 s
+2025-05-19 10:35:15 INFO  DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-05-19 10:35:15 INFO  TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+2025-05-19 10:35:15 INFO  DAGScheduler: Job 1 finished: csv at main.scala:17, took 0,867584 s
+2025-05-19 10:36:19 INFO  SparkContext: Invoking stop() from shutdown hook
+2025-05-19 10:36:19 INFO  SparkContext: SparkContext is stopping with exitCode 0.
+2025-05-19 10:36:19 INFO  AbstractConnector: Stopped Spark@1fb48736{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2025-05-19 10:36:19 INFO  SparkUI: Stopped Spark web UI at http://172.20.10.3:4040
+2025-05-19 10:36:19 INFO  MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+2025-05-19 10:36:19 INFO  MemoryStore: MemoryStore cleared
+2025-05-19 10:36:19 INFO  BlockManager: BlockManager stopped
+2025-05-19 10:36:19 INFO  BlockManagerMaster: BlockManagerMaster stopped
+2025-05-19 10:36:19 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+2025-05-19 10:36:19 INFO  SparkContext: Successfully stopped SparkContext
+2025-05-19 10:36:19 INFO  ShutdownHookManager: Shutdown hook called
+2025-05-19 10:36:19 INFO  ShutdownHookManager: Deleting directory /private/var/folders/zr/9zs30z0x7zqg2qtlblgpd45r0000gn/T/spark-1c8a6547-b1bd-4b4c-b088-6f5a6fedddb0
